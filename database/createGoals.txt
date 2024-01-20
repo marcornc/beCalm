@@ -1,0 +1,17 @@
+CREATE TABLE goals (
+  id SERIAL PRIMARY KEY,
+  sequence INT NOT NULL,
+  description TEXT NOT NULL,
+  further_details BOOLEAN NOT NULL DEFAULT false
+);
+
+INSERT INTO goals (sequence, description) VALUES (1, 'I would like to reduce stress and feel calmer');
+INSERT INTO goals (sequence, description) VALUES (2, 'I would like to lower anxiety and feel calmer');
+INSERT INTO goals (sequence, description) VALUES (3, 'I would like to reduce the pressure of thinking and sleep better at night');
+INSERT INTO goals (sequence, description) VALUES (4, 'I want to learn a simple relaxation or meditation exercise');
+INSERT INTO goals (sequence, description) VALUES (5, 'I would like to make a positive change in my own life');
+INSERT INTO goals (sequence, description, further_details) VALUES (6, 'I would like to make a make my own goal', true);
+
+
+# then add policy to the table to allow read to all authenticated users
+

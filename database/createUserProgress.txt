@@ -1,0 +1,14 @@
+CREATE TABLE user_progress (
+  user_id UUID REFERENCES auth.users NOT NULL,
+  survey_date DATE DEFAULT CURRENT_DATE,
+  wellbeing INT NOT NULL,
+  breathing INT NOT NULL,
+  relax INT NOT NULL,
+  express INT NOT NULL,
+  visualise INT NOT NULL,
+  PRIMARY KEY (user_id, survey_date)
+);
+
+# then add this policy to the table on all actions to allow users to only access their own rows
+# auth.uid() = user_id
+

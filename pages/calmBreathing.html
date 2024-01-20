@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+    <title>Becalm</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/calmBreathing.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/breathingBubble.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/userIcon.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <section class="main-container">
+        <header class="user-icon">
+          <img alt="user icon" class="user-avatar" />
+          <div class="dropdown">
+            <div class="dropdown-content">
+              <a href="#" id="logout">Log Out</a>
+            </div>
+          </div>
+        </header>
+
+        <section class="desktop-parent-container">
+          <section class="section-left">
+            <h1 class="calmBreathing-title">Calm Breathing</h1>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/G0fVVMx9ddc?si=XQsmBfAMzVtentf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="button-container button-container-bottom hidden done-container-wide">
+              <button class="button complete hidden" type="reset"><span class="done hidden">✅ </span><span class="text">Done</span></button>
+              <button class="button main-menu" type="submit">Menu</button>
+            </div>
+          </section>
+
+          <section class="section-right">
+            <div id="container" class="container bubble_position"></div>
+
+            <div class="slider-container">
+              <input class="range-slider inhaleDuration" type="range" min="0" max="100" step="1" value="20" />
+              <div class="slider-value inhaleDurationDisplay">Value: <span>0</span></div>
+            </div>
+
+            <div class="slider-container">
+              <input class="range-slider inhalePause" type="range" min="0" max="100" step="1" value="20" />
+              <div class="slider-value inhalePauseDisplay">Value: <span>0</span></div>
+            </div>
+
+            <div class="slider-container">
+              <input class="range-slider exhaleDuration" type="range" min="0" max="100" step="1" value="20" />
+              <div class="slider-value exhaleDurationDisplay">Value: <span>0</span></div>
+            </div>
+
+            <div class="slider-container">
+              <input class="range-slider exhalePause" type="range" min="0" max="100" step="1" value="20" />
+              <div class="slider-value exhalePauseDisplay">Value: <span>0</span></div>
+            </div>
+
+            <div class="button-container button-container-top">
+              <button class="button slow" type="submit">Slow</button>
+              <button class="button avg" type="reset">Average</button>
+              <button class="button fast" type="reset">Fast</button>
+            </div>
+
+            <div class="button-container button-container-middle">
+              <button class="button start_stop" type="reset">Start</button>
+            </div>
+
+            <div class="button-container button-container-bottom done-container-narrow">
+              <button class="button complete hidden" type="reset"><span class="done hidden">✅ </span><span class="text">Done</span></button>
+              <button class="button main-menu" type="submit">Menu</button>
+            </div>
+          </section>
+        </section>
+      </section>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script type="module" src="../scripts/calmBreathing.js"></script>
+    <script type="module" src="../scripts/breathingBubble.js"></script>
+    <script type="module" src="../scripts/exerciseDone.js"></script>
+    <script type="module" src="../scripts/userIcon.js"></script>
+  </body>
+</html>

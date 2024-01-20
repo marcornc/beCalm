@@ -1,0 +1,85 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container h2 {
+    margin-top: 2rem;
+    font-family: var(--font-heading);
+    color: var(--heading-color);
+    
+}
+
+.section-right {
+    margin-bottom: 3rem;
+    /* border: 1px solid red; */
+}
+.login-form {
+    margin-top: 2rem;
+    /* border: 1px solid red; */
+    width: 18rem;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+label {
+    margin-top: 1rem;
+    display: block;
+    text-align: left;
+    /* border: 1px solid red; */
+    font-family: var(--font-text);
+    color: var(--heading-color);
+    font-weight: 600;
+}
+input {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    
+}
+input:focus {
+    outline: 2px solid var(--heading-color);
+}
+.signinBtn {
+    margin-top: 3rem;
+    margin: 30px auto 0 auto;
+
+}
+
+.forgotPassword {
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    color: var(--heading-color);
+    text-decoration: none;
+    font-family: var(--font-text);
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+@media screen and (min-width: 680px) {
+    .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3rem;
+    }
+
+    .logo-wrapper {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .section-right {
+      /* border: 1px solid red; */
+  }
+}
+

@@ -1,0 +1,74 @@
+.main-container {
+    padding-bottom: 3rem;
+}
+
+.calmMindAudios-title {
+  /* border: 1px solid red; */
+  margin: 1.5rem 0;
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  background: linear-gradient(to right, #203665, #2c6f78 20%, #1c4661);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
+}
+
+
+.calmMindAudios-subtitle{
+margin: 1.5rem auto;
+ background: linear-gradient(to right, #203665, #2c6f78 20%, #1c4661);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 2.2rem;
+font-weight: 800;
+
+}
+
+.calm-mind-audio-parent {
+  max-width: 30rem;
+  width: 100%;
+  /* border: 2px solid black; */
+}
+
+
+.calm-mind-btn-container, .done-btn-container {
+    margin-top: 2rem;
+    /* border: 1px solid red; */
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.complete {
+    min-width: 190px;
+}
+
+@media screen and (min-width: 800px) {
+  .calm-mind-audio-parent {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    border-radius: 0.4rem;
+    border: 2px solid #f0dec6;
+     box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
+  }
+ 
+  .section-left {
+    align-self: center;
+  }
+
+  .calmMindAudios-title {
+    margin-top: 1.5rem;
+  }
+
+  .calm-mind-btn-container {
+    justify-content: center;
+  }
+
+
+}

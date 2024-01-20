@@ -1,0 +1,80 @@
+.main-container {
+    padding-bottom: 3rem;
+}
+
+.login {
+    /* margin-top: 15vh; */
+}
+
+.signup {
+    /* margin-top: 2vh; */
+}
+
+.continue {
+    margin-top: 80px;
+}
+
+.strap {
+    /* font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    text-align: center; */
+}
+
+.strap.top {
+    margin-top: 80px;
+}
+
+
+
+/* index css */
+@media screen and (min-width: 750px) {
+    .main-container {
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 3rem;
+    }
+    .logo-wrapper {
+        /* border: 1px solid red; */
+        max-width: 400px;
+        max-height: 400px;
+    }
+      
+     .section-right {
+        
+        grid-column: 2;
+        grid-row: 1 / 2;
+        /* border: 1px solid red; */
+       
+    }
+
+    .section-left {
+        grid-column: 1;
+        /* border: 1px solid red; */
+      
+    }
+   
+   .app-caption {
+        margin: 1rem auto;
+        max-width: 100%;
+        font-size: 2.3rem;
+        line-height: 1.4;
+        /* border: 1px solid red; */
+       
+    }
+        
+        
+        
+    .login {
+        width: 100%;
+    }
+    .signup {
+        width: 100%;
+    }
+    .continue {
+       
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+    <title>Becalm</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/personalExpression.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/userIcon.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <section class="main-container">
+        <header class="user-icon">
+          <img alt="user icon" class="user-avatar" />
+          <div class="dropdown">
+            <div class="dropdown-content">
+              <a href="#" id="logout">Log Out</a>
+            </div>
+          </div>
+        </header>
+        <section class="desktop-parent-container">
+          <section class="section-left">
+            <h1 class="calmBreathing-title">Personal Expression</h1>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/9mssvUIcrlA?si=cov8Tkbsloh4gkmW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </section>
+
+          <section class="section-right">
+            <h2>What would you like to do?</h2>
+            <div class="buttons-container">
+              <button class="button uploadMandala" type="submit">Upload</button>
+              <button class="button drawMandala" type="submit">Draw</button>
+              <button class="button viewMandalas" type="submit">History</button>
+            </div>
+            <div class="menu-container">
+              <button class="button complete hidden" type="reset"><span class="done hidden">✅ </span><span class="text">Done</span></button>
+              <div><button class="button mainMenu" type="submit">Menu</button></div>
+            </div>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- <script type="module" src="../scripts/mandala.js"></script> -->
+    <script type="module" src="../scripts/personalExpression.js"></script>
+    <script type="module" src="../scripts/userIcon.js"></script>
+  </body>
+</html>

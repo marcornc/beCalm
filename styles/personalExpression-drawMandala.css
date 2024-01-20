@@ -1,0 +1,102 @@
+.main-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1 {
+  margin-top: 4rem;
+}
+
+.video-container {
+  margin-bottom: 30px;
+}
+
+.mandala {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.drawing {
+  cursor: crosshair;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.background,
+.shadow {
+  pointer-events: none;
+}
+
+.drawing {
+  z-index: 1;
+}
+
+.background {
+  position: absolute;
+  width: calc(400px * 0.9);
+  height: calc(400px * 0.9);
+  background-color: #fff4e6;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+
+.save-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.save-container button {
+  margin: 0px 15px;
+  margin-bottom: 10px;
+}
+
+.button {
+  min-height: 50px;
+  /* margin: 10px 10px; */
+}
+
+/* styles for colour picker */
+
+.color-picker-container {
+  width: 75%;
+  max-width: 300px;
+  text-align: center;
+  
+}
+
+.colour-preview {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.colour-picker:hover {
+  opacity: 1;
+}
+
+.menu-container {
+  margin-top: 1rem;
+}
+
+.complete {
+    min-width: 190px;
+    margin-top: 2rem;
+}

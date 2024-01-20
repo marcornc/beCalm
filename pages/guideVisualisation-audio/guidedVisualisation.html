@@ -1,0 +1,51 @@
+<!-- Visualization pages -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/userIcon.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/guidedVisualisation.css" />
+    <title>BeCalm</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <section class="main-container">
+        <header class="user-icon">
+          <img alt="user icon" class="user-avatar" />
+          <div class="dropdown">
+            <div class="dropdown-content">
+              <a href="#" id="logout">Log Out</a>
+            </div>
+          </div>
+        </header>
+        <section class="guided-visualisation-page-parent">
+          <h1 class="gv-title">Guided Visualisation</h1>
+          <p class="gv-info">Embark on a path to relaxation with our guided visualization exercises. These sessions are designed to lead you into a state of calm and clarity.</p>
+
+          <section class="gv-audio-container">
+            <button class="button introduction-GV gv-btn" type="submit">Introduction</button>
+            <button class="button day1-GV gv-btn" type="submit">Day 1</button>
+            <button class="button day2-GV gv-btn" type="submit">Day 2</button>
+            <button class="button day3-GV gv-btn" type="submit">Day 3</button>
+            <button class="button day4-GV gv-btn" type="submit">Day 4</button>
+            <button class="button day5-GV gv-btn" type="submit">Day 5</button>
+            <button class="button day6-GV gv-btn" type="submit">Day 6</button>
+            <button class="button day7-GV gv-btn" type="submit">Day 7</button>
+          </section>
+
+          <div class="done-btn-container" hidden>
+            <button class="button complete hidden" type="reset"><span class="done hidden">✅ </span><span class="text">Done</span></button>
+          </div>
+          <button class="button main-menu gv-menu-btn" type="submit">Menu</button>
+        </section>
+      </section>
+    </section>
+
+    <script src="../../scripts/guidedVisualisation.js" type="module"></script>
+    <script type="module" src="../../scripts/userIcon.js"></script>
+  </body>
+</html>

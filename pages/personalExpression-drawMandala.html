@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+    <title>Becalm</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/personalExpression.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/personalExpression-drawMandala.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/userIcon.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <section class="main-container">
+        <header class="user-icon">
+          <img alt="user icon" class="user-avatar" />
+          <div class="dropdown">
+            <div class="dropdown-content">
+              <a href="#" id="logout">Log Out</a>
+            </div>
+          </div>
+        </header>
+
+        <h1 class="draw-mandala-title">Draw a Mandala</h1>
+
+        <div class="save-container">
+          <button class="button clear" type="reset">Clear</button>
+          <button class="download button" type="submit">Save</button>
+        </div>
+
+        <div class="mandala">
+          <canvas class="drawing"></canvas>
+          <canvas class="background show"></canvas>
+        </div>
+
+        <div class="color-picker-container">
+          <input type="color" id="colour-picker" class="hidden" />
+          <button type="submit" class="colour-preview" onclick="document.querySelector('#colour-picker').click()"></button>
+          <div class="slider-value colour-display">Colour <span></span></div>
+        </div>
+
+        <div class="slider-container">
+          <input class="range-slider line-width" type="range" min="1" max="20" step="1" value="2" />
+          <div class="slider-value line-width-display">Value: <span>0</span></div>
+        </div>
+
+        <div class="slider-container hidden">
+          <input class="range-slider mirrors" type="range" min="1" max="12" step="1" value="12" />
+          <div class="slider-value mirrors-display">Value: <span>0</span></div>
+        </div>
+
+        <div class="menu-container">
+          <button class="button backButton" type="submit">Back</button>
+          <button class="button mainMenu" type="submit">Menu</button>
+        </div>
+      </section>
+    </section>
+    <script type="module" src="../scripts/personalExpression-drawMandala.js"></script>
+    <script type="module" src="../scripts/userIcon.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <title>Becalm</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/goals.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/userIcon.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <section class="main-container">
+           <div class="user-icon">
+              <img alt="user icon" class="user-avatar" />
+              <div class="dropdown">
+                <div class="dropdown-content">
+                  <a href="#" id="logout">Log Out</a>
+                </div>
+              </div>
+            </div>
+
+       
+           
+
+            <section class="goal-parent-container">
+
+                <section class="section-left">
+                    <div class="logo-wrapper">
+                      <img src="../static/potential-logo-01.png" alt="logo-image" class="logo-img" />
+                    </div>
+
+                    <h1>Setting Goals</h1>
+
+                    <p class="goals-info">It can be very helpful when starting a program of personal wellbeing to set a goal and choose an image to represent that goal. If you would like to do this, please choose a goal:</p>
+                </section>
+
+
+                <section class="section-right">
+                      <div class="goal-container"></div>
+                      <label for="goalInput" class="visually-hidden-label">Make My Own Goal</label>
+
+                      <p class="choose-image">Choose an image to represent your goal:</p>
+
+                            <div class="images-container">
+                            <!-- <div class="carousel-view">
+                                <button id="prev-btn" class="prev-list carousel-button" type="submit">
+                                  <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
+                                    <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                  </svg>
+                                </button> 
+                                <div id="item-list" class="item-list">-->
+                              <img class="goal-image" src="../static/bird02.png" alt="bird"/>
+                              <img class="goal-image" src="../static/tree.png" alt="tree"/>
+                              <img class="goal-image" src="../static/sleepy-face.png" alt="sleepy face"/>
+                              <img class="goal-image" src="../static/calm-smile.png" alt="calm smile"/>
+                              <img class="goal-image" src="../static/cat-01.png" alt="sleepy cat"/>
+                              <img class="goal-image" src="../static/cat-02.png" alt="cat"/>
+                              <img class="goal-image" src="../static/clouds-02.png" alt="clouds"/>
+                              <img class="goal-image" src="../static/flowers-01.png" alt="flowers"/>
+                              <img class="goal-image" src="../static/golden-cup.png" alt="golden cup"/>
+                              <img class="goal-image" src="../static/mountains-01.png" alt="mountains"/>
+                              <img class="goal-image" src="../static/panda-02.png" alt="playful panda"/>
+                              <img class="goal-image" src="../static/panda.png" alt="panda"/></div>
+                        <!--</div>
+                        <button id="next-btn" class="next-btn carousel-button"><svg viewBox="0 0 512 512" width="20" title="chevron-circle-right">
+                          <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" />
+                        </svg></button>
+                      </div>-->
+                    </div>
+
+                      <p class="error hidden">Please select a goal</p>
+
+                      <div class="button-container">
+                        <button class="button continue" type="submit">Continue</button>
+                        <button class="button skip" type="submit">Skip</button>
+                      </div>
+                </section>
+
+            </section>
+
+
+     
+      </section>
+    </section>
+
+    <script type="module" src="../scripts/goals.js"></script>
+    <script type="module" src="../scripts/userIcon.js"></script>
+  </body>
+</html>

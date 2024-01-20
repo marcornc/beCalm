@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+    <title>Becalm</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/assess.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/userIcon.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <section class="main-container">
+        <section class="section-left">
+          <header class="user-icon">
+            <img alt="user icon" class="user-avatar" />
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <a href="#" id="logout">Log Out</a>
+              </div>
+            </div>
+          </header>
+          <div class="logo-wrapper">
+            <img src="../static/potential-logo-01.png" alt="logo-image" class="logo-img" />
+          </div>
+
+          <h1 class="assess-title">Measuring Progress</h1>
+          <article class="assess-info">
+            <p class="assess-text">In order to help measure your own progress, please answer the following 5 questions. You will be asked the same feedback questions again in 7 days time so you can track your own progress.</p>
+            <p class="assess-text">When you click submit, your feedback scores will be anonymously shared with the app development team in order to help us understand how useful the app is and any improvements that can be made.</p>
+          </article>
+
+          <div class="horizontal-line"></div>
+        </section>
+
+        <section class="section-right">
+          <p class="wellbeing-question">How would you rate your overall level of wellbeing at the moment?</p>
+          <p class="question-info">0 = highly stressed or anxious<br />10 = any stress or anxiety is well managed</p>
+          <div class="slider-container">
+            <label for="wellbeing-slider" class="visually-hidden-label">Overall Wellbeing Rating</label>
+            <input id="wellbeing-slider" class="range-slider wellbeing" type="range" min="0" max="10" step="1" value="5" />
+            <div class="slider-value wellbeing-display">Value: <span>5</span></div>
+          </div>
+          <div class="horizontal-line"></div>
+
+          <p class="wellbeing-question">How confident are you that you could use your breathing to calm yourself down?</p>
+          <p class="question-info">0 = no confidence, 10 = high confidence</p>
+          <div class="slider-container">
+            <label for="breathing-slider" class="visually-hidden-label">Breathing Rating</label>
+            <input id="breathing-slider" class="range-slider breathing" type="range" min="0" max="10" step="1" value="5" />
+            <div class="slider-value breathing-display">Value: <span>5</span></div>
+          </div>
+
+          <div class="horizontal-line"></div>
+          <p class="wellbeing-question">How would you rate your own ability to deeply relax your body and mind?</p>
+          <p class="question-info">0 = no confidence, 10 = high confidence</p>
+          <div class="slider-container">
+            <label for="relax-slider" class="visually-hidden-label">Relax Rating</label>
+            <input id="relax-slider" class="range-slider relax" type="range" min="0" max="10" step="1" value="5" />
+            <div class="slider-value relax-display">Value: <span>5</span></div>
+          </div>
+
+          <div class="horizontal-line"></div>
+
+          <p class="wellbeing-question">How confident are you to find a way to express yourself emotionally?</p>
+          <p class="question-info">0 = no confidence, 10 = high confidence</p>
+          <div class="slider-container">
+            <label for="express-slider" class="visually-hidden-label">Express Rating</label>
+            <input id="express-slider" class="range-slider express" type="range" min="0" max="10" step="1" value="5" />
+            <div class="slider-value express-display">Value: <span>5</span></div>
+          </div>
+
+          <div class="horizontal-line"></div>
+
+          <p class="wellbeing-question">How confident are you at using visualisation/imagery as a helpful personal resource?</p>
+          <p class="question-info">0 = no confidence, 10 = high confidence</p>
+          <div class="slider-container">
+            <label for="visualise-slider" class="visually-hidden-label">Visualise Rating</label>
+            <input id="visualise-slider" class="range-slider visualise" type="range" min="0" max="10" step="1" value="5" />
+            <div class="slider-value visualise-display">Value: <span>5</span></div>
+          </div>
+
+          <div class="button-container">
+            <button class="button continue" type="submit">Continue</button>
+            <button class="button skip" type="submit">Skip</button>
+          </div>
+          <p class="skip-warning">(if you skip this, you will not be able to measure your own progress)</p>
+        </section>
+
+        <div class="horizontal-line"></div>
+      </section>
+    </section>
+
+    <script type="module" src="../scripts/assess.js"></script>
+    <script type="module" src="../scripts/userIcon.js"></script>
+  </body>
+</html>

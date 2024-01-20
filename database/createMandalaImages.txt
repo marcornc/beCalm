@@ -1,0 +1,12 @@
+CREATE TABLE mandala_images (
+  user_id UUID REFERENCES auth.users NOT NULL,
+  created_date timestamp DEFAULT CURRENT_TIMESTAMP,
+  description TEXT,
+  thumbnail_path TEXT,
+  image_path TEXT,
+  PRIMARY KEY (user_id, created_date)
+);
+
+# then add this policy to the table on all actions to allow users to only access their own rows
+# auth.uid() = user_id
+

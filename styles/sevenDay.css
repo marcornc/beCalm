@@ -1,0 +1,134 @@
+/* 
+========================+
+Seven Day Programme CSS
+=========================
+ */
+
+.seven-day-title {
+  max-width: 25rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  /* letter-spacing: 0.2rem; */
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+}
+
+.intro-text {
+  width: 100%;
+  max-width: 30rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: var(--text-colour);
+}
+
+.sevenDayContainer {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  width: 100%;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.singleSD {
+  position: relative;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--text-colour);
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.singleSD:hover {
+  background: #feebd1;
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #c8c8bd; /* Replace with your background color */
+  mix-blend-mode: overlay;
+  border-radius: 0.4rem;
+  z-index: 1;
+}
+
+.imgBoxSD {
+  width: 4rem;
+  z-index: 1;
+}
+
+.imgBoxSD img {
+  border-radius: 0.2rem;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.exerciseText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 1;
+  font-size: 1.2rem;
+}
+.sd-btn {
+  width: 100%;
+}
+
+.seven-day-btnContainer {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 400px) {
+  .seven-day-title {
+    font-size: 3rem;
+  }
+}
+
+/* the below styles come into effect when screen is greater than 600px  */
+@media screen and (min-width: 600px) {
+  .main-container {
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .intro-text {
+    max-width: 45rem;
+  }
+
+  .sevenDayContainer {
+    max-width: 45rem;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .singleSD {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 100px;
+    justify-content: center;
+    text-align: center;
+  }
+  .imgBoxSD {
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+
+  .day7 {
+    grid-column: 2 / 3;
+  }
+}

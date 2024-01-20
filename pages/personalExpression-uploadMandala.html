@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+    <title>Becalm</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="./styles/styles.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./styles/personalExpression.css" /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/personalExpression.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/personalExpression-uploadMandala.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../styles/mandala.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../styles/userIcon.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <!-- <section class="outer-container"> -->
+      <section class="main-container">
+        <header class="user-icon">
+          <img alt="user icon" class="user-avatar" />
+          <div class="dropdown">
+            <div class="dropdown-content">
+              <a href="#" id="logout">Log Out</a>
+            </div>
+          </div>
+        </header>
+        <h1>Upload a Mandala</h1>
+        <div class="buttons-container">
+          <label for="fileInput" class="button file-input-label">Choose File</label>
+          <input type="file" id="fileInput" class="fileInput" style="display: none" accept="image/*" />
+          <p class="filePicked hidden">No file selected</p>
+          <label class="visually-hidden-label" for="description-box"></label>
+          <input id="description-box" class="description" type="text" name="description" value="" placeholder="Description" maxlength="80" />
+          <!-- drawing canvas where the img is written to create the small size img -->
+          <canvas id="imageCanvas" class="hidden"></canvas>
+          <button type="submit" class="button upload">Upload</button>
+          <p class="error hidden">Upload unsuccessful</p>
+          <p class="success hidden">Upload successful</p>
+        </div>
+
+        <div class="menu-container">
+          <button class="button backButton" type="submit">Back</button>
+          <button class="button mainMenu" type="submit">Menu</button>
+        </div>
+      </section>
+      <!-- </section> -->
+    </section>
+    <!-- <script type="module" src="../scripts/mandala.js"></script> -->
+    <script type="module" src="../scripts/personalExpression-uploadMandala.js"></script>
+    <script type="module" src="../scripts/userIcon.js"></script>
+  </body>
+</html>

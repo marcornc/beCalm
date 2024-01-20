@@ -1,0 +1,42 @@
+CREATE TABLE user_details (
+  user_id UUID PRIMARY KEY REFERENCES auth.users NOT NULL,
+  suppress_disclaimer BOOLEAN NOT NULL DEFAULT false,
+  feedback_due BOOLEAN NOT NULL DEFAULT true,
+  goals_due BOOLEAN NOT NULL DEFAULT true,
+  usage_due BOOLEAN NOT NULL DEFAULT true,
+  program_duration INT NOT NULL DEFAULT 0,
+  program_days_spent INT NOT NULL DEFAULT 0,
+  last_exercise_date DATE,
+  goal_id INT,
+  goal_description TEXT,
+  goal_image TEXT,
+  CONSTRAINT fk_user_details_goals
+  FOREIGN KEY (goal_id) REFERENCES goals (id)
+);
+
+
+ALTER TABLE user_details
+ADD COLUMN goals_due BOOLEAN NOT NULL DEFAULT true;
+ADD COLUMN usage_due BOOLEAN NOT NULL DEFAULT true;
+
+
+ALTER TABLE user_details
+ADD COLUMN goal_id int,
+ADD COLUMN goal_description TEXT,
+ADD CONSTRAINT fk_user_details_goals
+  FOREIGN KEY (goal_id) REFERENCES goals (id);
+
+ALTER TABLE user_details
+ADD COLUMN goal_image TEXT;
+
+
+
+# then add this policy to the table on all actions to allow users to only access their own rows
+# auth.uid() = user_id
+
+# insert statement for dougkforbes user_details
+# INSERT INTO user_details (user_id) VALUES ('acd35765-c44f-42a5-b2d4-e1674067c27f');
+
+# FinalProject2 database
+# INSERT INTO user_details (user_id) VALUES ('d5885360-5d83-49a1-8067-f0106a604ab3');
+

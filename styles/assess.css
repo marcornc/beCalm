@@ -1,0 +1,131 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skip-warning {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: var(--font-heading);
+}
+
+.assess-title {
+  font-size: 2.4rem;
+  color: #feebd1;
+  font-size: 3.5rem;
+  font-family: var(--font-heading);
+  margin-bottom: 1.5rem;
+}
+
+.assess-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem auto;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.assess-text {
+  color: var(--text-colour);
+  font-family: var(--font-text);
+  line-height: 1.6;
+  /* border: 1px solid red; */
+  /* max-width: 27rem; */
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+.survey {
+  margin-top: 50px;
+}
+
+.wellbeing-question {
+  font-weight: 700;
+  margin-top: 1.5rem;
+  text-align: left;
+  margin: 30px auto;
+  line-height: 1.6;
+
+}
+
+.question-info {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+.info{
+  font-weight: 400;
+}
+
+.button {
+  margin: 0 10px;
+  margin-top: 40px;
+}
+
+.scale-para-top {
+  margin: 0;
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.scale-para-bottom {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.main-container {
+  /* border: 1px solid red; */
+  max-width: 600px;
+  margin: 0 auto;
+  /* line-height: 1.5; */
+  color: var(--text-colour);
+  font-family: var(--font-text);
+  
+}
+
+.slider-container {
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  align-self:start;
+}
+
+.horizontal-line {
+  margin-bottom: 1.5rem;  
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 450px) {
+  .assess-title {
+    font-size: 3rem;
+  }
+}
+
+/* media queries */
+@media screen and (min-width: 950px) {
+  
+  .main-container {
+    padding-top: 2rem;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+    align-items: start;
+    
+  }
+
+  .horizontal-line {
+    display: none;
+  }
+    
+}

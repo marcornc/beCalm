@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <title>Becalm</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/usage.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/userIcon.css" />
+  </head>
+  <body>
+      <section class="wrapper">
+        <!-- <section class="outer-container"> -->
+        <section class="main-container">
+            <header class="user-icon">
+              <img alt="user icon" class="user-avatar" />
+              <div class="dropdown">
+                  <div class="dropdown-content">
+                      <a href="#" id="logout">Log Out</a>
+                  </div>
+              </div>
+            </header>
+
+          <section class="section-left">
+            <div class="logo-wrapper">
+              <img src="../static/potential-logo-01.png" alt="logo-image" class="logo-img" />
+            </div>
+          </section>
+
+          <section class="section-right">
+            <h1 class="usage-title">Using BeCalm</h1>
+
+            <article class="usageInfo">
+              <p class="usage-text">In the app you can explore the different exercises and sections of the app yourself, finding out what works best for you. Or you can take the 7 day program that guides you through all the different sections of the app.</p>
+
+              <p class="usage-text">If you choose the self-exploration route, it is suggested that when you find a section that is helpful, you commit to it for 7 days. You can come back at any time to the menu page and then choose the pre-defined program if you would like to.</p>
+
+              <div class="horizontal-line"></div>
+
+              <p class="usage-italisized">This app is not designed to achieve your goals for you, only you can do that - it is designed to give you a range of tools and techniques that you may find helpful. It is up to you to find out which ones work best for you and to use these tools to empower yourself to achieve your own goal. Good luck!</p>
+            </article>
+
+            <div class="checkbox-container">
+              <label>
+                <input class="checkbox" type="checkbox" name="acceptance" />
+                <span>Don't show again</span>
+              </label>
+            </div>
+
+            <div class="button-container">
+              <button class="button continue" type="submit">Continue</button>
+            </div>
+          </section>
+          
+        </section>
+        <!-- </section> -->
+      </section>
+    <script type="module" src="../scripts/usage.js"></script>
+    <script type="module" src="../scripts/userIcon.js"></script>
+  </body>
+</html>

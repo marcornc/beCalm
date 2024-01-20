@@ -1,0 +1,23 @@
+{
+  "name": "becalm-final-project",
+  "version": "1.0.0",
+  "description": "readme",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test1": "cross-env NODE_OPTIONS='-r dotenv/config' npx vitest",
+    "reset-database": "node -r dotenv/config db/scripts/reset-database.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@supabase/supabase-js": "^2.39.0",
+    "@types/node": "^20.10.4",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "vitest": "^1.0.4"
+  }
+}

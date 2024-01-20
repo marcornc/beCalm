@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <title>Becalm</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/register.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <section class="main-container">
+        <section class="section-left">
+          <div class="logo-wrapper">
+            <img
+              src="../static/potential-logo-01.png"
+              alt="logo-image"
+              class="logo-img"
+            />
+          </div>
+        </section>
+        <section class="section-right">
+          <div class="register-container">
+            <h1 class="register-title">Register</h1>
+            <form class="register-form">
+              <label for="register-email">Email:</label>
+              <input
+                type="email"
+                id="register-email"
+                placeholder="johndoe@gmail.com"
+              />
+
+              <label for="register-password">Password:</label>
+              <input
+                type="password"
+                id="register-password"
+                placeholder="a strong password"
+                required
+              />
+
+              <label for="register-password-confirm">Confirm password:</label>
+              <input
+                type="password"
+                id="register-password-confirm"
+                placeholder="a strong password"
+                required
+              />
+
+              <p class="error hidden">Registration attempt was unsuccessful</p>
+              <p class="success hidden">
+                Registration was successful, please check your email
+              </p>
+
+              <button class="button" type="submit">Register</button>
+            </form>
+          </div>
+        </section>
+      </section>
+    </section>
+    <script type="module" src="../scripts/register.js"></script>
+  </body>
+</html>
