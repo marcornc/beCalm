@@ -1,7 +1,7 @@
 
 # BeCalm
 
-[Website Live Link](https://becalm-final-project.onrender.com/)
+([See the Project](https://be-calm.vercel.app/))
 
 ## Authors
 * [Doug Forbes](https://github.com/Dug-F)
