@@ -1,7 +1,7 @@
 
 # BeCalm
 
-([See the Project](https://be-calm.vercel.app/))
+[See the Project](https://be-calm.vercel.app/)
 
 ## Authors
 * [Doug Forbes](https://github.com/Dug-F)
@@ -73,7 +73,7 @@ user_id, created_date, description, thumbnail_path, image_path
 
 ### Hosting
 
-* [Render](https://dashboard.render.com/)
+* [Vercel]((https://vercel.com/))
 <!-- Question for coaches: How do we shift control of deployment to Anthony? -->
 
 ### Installing
