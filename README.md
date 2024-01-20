@@ -73,7 +73,7 @@ user_id, created_date, description, thumbnail_path, image_path
 
 ### Hosting
 
-* [Vercel]((https://vercel.com/))
+* [Vercel](https://vercel.com/)
 <!-- Question for coaches: How do we shift control of deployment to Anthony? -->
 
 ### Installing
